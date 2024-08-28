@@ -1,9 +1,9 @@
 import { module, test } from "qunit";
-import { randomizeEmojiGender } from "../../unformatted-code-detector/helpers/emoji-diversity";
+import { randomizeEmojiGender } from "../../discourse/lib/emoji-diversity";
 
 const originalMathRandom = Math.random;
 
-module("randomize emoji gender", function (hooks) {
+module("Unformatted Code Detector | randomize emoji gender", function (hooks) {
   hooks.afterEach(function () {
     // override in tests to make deterministic
     Math.random = originalMathRandom;

@@ -1,0 +1,23 @@
+# WARNING: Never edit this file.
+# It will be overwritten when translations are pulled from Crowdin.
+#
+# To work with us on translations, join this project:
+# https://translate.discourse.org/
+
+tr_TR:
+  warning_modal:
+    title: Kod mu paylaşıyorsunuz?
+    content: |
+      Gönderiniz kod veya günlük içeriyor gibi görünüyor. Gönderinizi okunabilir tutmak için lütfen *Önceden biçimlendirilmiş metin* araç çubuğu düğmesini <kbd></></kbd>veya aşağıdaki gibi klavyenizdeki ters tırnak işaretini <kbd>`</kbd> kullanarak **kodunuzu biçimlendirmeyi** unutmayın:
+
+      `` `tek satır` ``
+
+      ````
+      ```
+      birden fazla
+      satır
+      ```
+      ````
+    do_not_show_again: bu mesajı tekrar gösterme
+    fix_post: Gönderiyi düzenle
+    ignore_and_post_anyway: Yine de paylaş

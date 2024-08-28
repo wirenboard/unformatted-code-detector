@@ -1,5 +1,5 @@
 import { module } from "qunit";
-import { expectAll } from "../../helpers/utils";
+import { detectUnformattedCode } from "../../../discourse/core/detect-code";
 import {
   noCode,
   withBareHTML,
@@ -7,9 +7,9 @@ import {
   withFormattedHTML,
   withUnformattedCode,
 } from "../../fixtures/basic";
-import { detectUnformattedCode } from "../../../unformatted-code-detector/core/detect-code";
+import { expectAll } from "../../helpers/utils";
 
-module("With HTML", function (hooks) {
+module("Unformatted Code Detector | with HTML", function (hooks) {
   hooks.beforeEach(function () {
     settings.sensitivity = 1;
     settings.min_post_length_to_check = 0;

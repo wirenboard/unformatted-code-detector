@@ -1,11 +1,11 @@
-import { getLineBoundaries, isBetween } from "../helpers/boundaries";
-import { stripIgnoredContent } from "./strip-ignored-content";
+import { getLineBoundaries, isBetween } from "../lib/boundaries";
 import {
   CodeEnergyLevels,
   codeEnergyValues,
   getCodeEnergyIndicators,
 } from "./code-energy";
 import { sensitivityConfig } from "./sensitivity";
+import { stripIgnoredContent } from "./strip-ignored-content";
 
 export const getCodeEnergy = (content) => {
   let totalCodeEnergy = 0;

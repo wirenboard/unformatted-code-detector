@@ -1,10 +1,9 @@
+import { module } from "qunit";
+import { detectUnformattedCode } from "../../discourse/core/detect-code";
+import { withUnformattedCode } from "../fixtures/basic";
 import { expectAll } from "../helpers/utils";
 
-import { withUnformattedCode } from "../fixtures/basic";
-import { detectUnformattedCode } from "../../unformatted-code-detector/core/detect-code";
-import { module } from "qunit";
-
-module("ignore if too short", function (hooks) {
+module("Unformatted Code Detector | ignore if too short", function (hooks) {
   hooks.beforeEach(function () {
     settings.sensitivity = 1;
     settings.min_post_length_to_check = 10_000;
@@ -13,7 +12,7 @@ module("ignore if too short", function (hooks) {
   expectAll(detectUnformattedCode, withUnformattedCode, false);
 });
 
-module("ignore if too long", function (hooks) {
+module("Unformatted Code Detector | ignore if too long", function (hooks) {
   hooks.beforeEach(function () {
     settings.sensitivity = 1;
     settings.max_post_length_to_check = 1;
